@@ -1,0 +1,197 @@
+@import url(common.css);
+.main_banner_bg {
+    background: url(../image/ex_main.jpg) 50% 47% / cover no-repeat;
+    width: 100%;        
+    padding-top: 100px;
+    height: 360px;    
+    text-align: center;
+    position: relative;    
+}
+.main_banner_bg:after {
+    content: '';
+    background: rgba(22, 27, 45, .5);
+    top: 0; right: 0; bottom: 0; left: 0;
+    position: absolute;
+}
+.main_banner h2 {
+    width: 385px;
+    margin-bottom: 0;
+    position: absolute;    
+    top: 240.5px;
+    left: 50%;    
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid #fff;    
+    padding: 25px 0;
+    z-index: 1;    
+}
+.main_contents p { 
+    margin-top: 108px;
+    margin-bottom: 108px;
+    text-align: center;          
+    font-size: 24px;
+    line-height: 36px;
+    color: #333;
+}
+.pagination_list {    
+    text-align: center;
+}
+.pagination_list ul {    
+    box-sizing: border-box;
+    display: inline-block; 
+    vertical-align: top;            
+    border-bottom: 1px solid #666;   
+}
+.pagination ul li {   
+    float: left;
+}
+.pagination ul li:last-child{
+    margin-right: 0;
+}
+.pagination ul li a {
+    font-weight: 300;
+    line-height: 63px;
+    padding: 0px 40.5px;    
+    position: relative;    
+    display: block;
+}
+.pagination ul li a:after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #0052A4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: 0.4s;    
+}
+.pagination ul li a.active {
+    background: #0052A4;
+    color: #fff;
+    font-weight: 500;
+}
+.pagination ul li a:hover:not(.active), .pagination ul li a:focus:not(.active) {
+    color: #0052A4;
+    font-weight: 500;
+}
+.pagination ul li a:hover:after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid #0052A4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;   
+}
+.main_slide {           
+    position: relative;    
+    padding: 81px 0;
+    height: 960px;     
+    overflow: hidden;
+}
+.main_slide_wrapper > ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s;   
+    display: none;       
+}
+.main_slide_wrapper > ul.active{
+    display: block;
+} 
+.main_slide_wrapper > ul > li {
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+}
+.controls {    
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#controls, #controls2, #controls3 {
+    display: none;
+}
+#controls.active {
+    display: initial;
+}
+#controls2.active {
+    display: initial;
+}
+#controls3.active {
+    display: initial;
+}
+.controls a {
+    position: absolute;
+}
+.controls .right {
+    left: 625px;
+}
+.controls .left {
+    right: 625px;
+}
+.controls a span {    
+    cursor: pointer;
+    font-size: 81px;
+    color: #e2e2e2;
+    transition: 0.2s;   
+}
+.controls span:hover, .controls span:focus{    
+    color: #0052A4;
+} 
+.main_slide .main_slide_wrapper {         
+    text-align: center;    
+}
+.main_slide .main_slide_wrapper .main_slides > li { 
+    width: 100%;   
+    transition: 0.5s;
+    position: absolute;        
+}
+.main_slide .main_slide_wrapper .main_slides p.image {    
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.main_slide .main_slide_wrapper .main_slides p.cadillac {            
+    background-image: url(../image/car2.png);
+    background-size: 60%;
+}
+.main_slide .main_slide_wrapper .main_slides p.buick {   
+    background-image: url(../image/car_1.png);
+    background-size: 55%;
+}
+.main_slide .main_slide_wrapper .main_slides p.benz {   
+    background-image: url(../image/car3.png);
+    background-size: 60%;
+}
+.main_slide .main_slide_wrapper .main_slides .sub_tt {
+    font-size: 30px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 27px;    
+}
+.main_slide .main_slide_wrapper .main_slides .decription {
+    margin-top: 81px;
+    border-top: 1px solid #666;        
+}
+.main_slide .main_slide_wrapper .main_slides .description_left {
+    width: 25%;    
+    padding: 27px 0 87px 27px;
+    float: left;
+    text-align: left;
+    font-weight: 500;
+    line-height: 30px;
+    color: #333;    
+    background: rgba(229, 229, 229, .3);    
+}
+.main_slide .main_slide_wrapper .main_slides .description_right { 
+    float: right;
+    width: 65%;   
+    padding: 27px 27px 27px 0;
+    text-align: justify;        
+    font-weight: 300;
+    line-height: 30px;
+    word-break: break-all;    
+}

@@ -1,0 +1,76 @@
+@import url(common.css);
+.main_banner_bg {
+    background: url(../image/site_main.jpg) 50% 57% / cover no-repeat;
+    width: 100%;        
+    padding-top: 100px;
+    height: 360px;    
+    text-align: center;
+    position: relative;    
+}
+.main_banner_bg:after {
+    content: '';
+    background: rgba(22, 27, 45, .5);
+    top: 0; right: 0; bottom: 0; left: 0;
+    position: absolute;
+}
+.main_banner h2 {
+    width: 385px;
+    margin-bottom: 0;
+    position: absolute;    
+    top: 240.5px;
+    left: 50%;    
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 25px 0;
+    z-index: 1;    
+}
+.main_list {
+    padding: 81px 0;
+}
+.main_list .most_ul > li {    
+    float: left;       
+    padding-right: 100px;
+    font-size: 20px;       
+    color: #333;
+}
+.main_list .most_ul li.last {
+    padding-right: 0;                
+}
+.main_list .most_ul > li.leader_list {
+    width: 17%;
+    font-size: 30px;
+    color: #333;
+    text-align: left;     
+    padding-right: 0;
+}
+
+.main_list .most_ul > li.leader_list a {
+    padding-bottom: 17px;         
+    border-bottom: 3px solid #0052A4;
+}
+.main_list .most_ul:not(:last-child) {
+    margin-bottom: 81px;       
+}
+.main_list .most_ul > li ul {  
+    font-size: 16px; 
+    margin-top: 54px;    
+}
+.main_list .relative_container {
+    position: relative;    
+}
+.main_list p {
+    top: 0;
+    width: 100%;
+    position: absolute;       
+    box-sizing: border-box;   
+    border-bottom: 1px solid rgba(102, 102, 102, .5);
+    padding-top: 27px;
+    z-index: -5;
+    text-indent: -9999em;
+}
+.main_list .most_ul > li ul li a{
+    font-weight: 300;    
+    line-height: 27px;
+}
